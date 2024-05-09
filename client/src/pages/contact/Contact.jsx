@@ -105,10 +105,9 @@ const Contact = () => {
         {/* Contact form */}
         <form
           className="flex flex-col gap-4"
-          action={`https://formspree.io/f/${
-            import.meta.env.VITE_FORMIK_SECRET
-          }`}
           method="POST"
+          action="https://formspree.io/f/mpzvblqy"
+          
         >
           <div className="flex gap-4 flex-col sm:flex-row md:flex-col lg:flex-row">
             <Input

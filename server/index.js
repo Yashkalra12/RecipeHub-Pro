@@ -21,6 +21,11 @@ app.use(cookieParser());
 
 app.use(express.json());
 
+// Route handler for root URL
+app.get("/", (req, res) => {
+  res.send("yayyy yashh your backend is working 🥳");
+});
+
 // route middleware
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/user", require("./routes/userRoutes"));
