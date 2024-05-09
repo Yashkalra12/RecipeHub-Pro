@@ -14,7 +14,7 @@ import useTitle from "../../hooks/useTitle";
 
 const Contact = () => {
   const user = useAuth();
-  useTitle("Recipen - Contact Us");
+  useTitle("RecipiHub-Pro - Contact Us");
 
   const [formDetails, setFormDetails] = useState({
     firstName: "",
@@ -40,17 +40,17 @@ const Contact = () => {
           <h4 className="font-bold">Visit us</h4>
           <p>Come say hello to our office</p>
           <p className="font-semibold text-sm">
-            Friends Colony, Mumbai, Maharashtra 400070
+            Chitkara University, Punjab 140401
           </p>
         </div>
         <div className="mb-5 flex flex-col gap-1">
           <h4 className="font-bold">Chat with us</h4>
           <p>Our team is here to help</p>
           <a
-            href="mailto:recipen@abc.com"
+            href="mailto:RecipiHub-Pro@abc.com"
             className="font-semibold text-sm"
           >
-            recipen@abc.com
+            RecipiHub-Pro@abc.com
           </a>
         </div>
         <div className="mb-5 flex flex-col gap-1">
@@ -70,7 +70,7 @@ const Contact = () => {
               className="hover:text-gray-500"
               whileHover={{ y: -4 }}
             >
-              <a href="https://github.com/Avinash905">
+              <a href="https://github.com/Yashkalra12">
                 <AiFillGithub />
               </a>
             </motion.li>
@@ -78,7 +78,7 @@ const Contact = () => {
               className="rounded-full hover:text-blue-400"
               whileHover={{ y: -4 }}
             >
-              <a href="https://twitter.com/avinashdunna">
+              <a href="https://twitter.com/?lang=en">
                 <AiFillTwitterCircle />
               </a>
             </motion.li>
@@ -86,7 +86,7 @@ const Contact = () => {
               className="rounded-full hover:text-blue-600"
               whileHover={{ y: -4 }}
             >
-              <a href="https://www.linkedin.com/in/dunna-avinash">
+              <a href="https://www.linkedin.com/in/yashkalra12/">
                 <AiFillLinkedin />
               </a>
             </motion.li>
@@ -117,7 +117,7 @@ const Contact = () => {
               handleChange={handleChange}
               value={formDetails.firstName}
               label={"First Name"}
-              placeholder={"John"}
+              placeholder={"Yash"}
               errorMessage={
                 "Should be more than 3 characters long and should not include special characters!"
               }
@@ -130,7 +130,7 @@ const Contact = () => {
               handleChange={handleChange}
               value={formDetails.lastName}
               label={"Last Name"}
-              placeholder={"Doe"}
+              placeholder={"Kalra"}
               errorMessage={
                 "Should be more than 3 characters long and should not include special characters!"
               }

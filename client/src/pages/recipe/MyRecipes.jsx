@@ -7,7 +7,7 @@ import useTitle from "../../hooks/useTitle";
 const index = () => {
   const { data, isLoading } = useGetRecipesQuery();
   const user = useAuth();
-  useTitle("Recipen - My Recipes");
+  useTitle("RecipiHub-Pro - My Recipes");
 
   const updatedData = data?.filter((obj) => obj.author._id === user?.userId);
 

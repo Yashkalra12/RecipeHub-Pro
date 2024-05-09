@@ -17,7 +17,7 @@ const SignIn = () => {
   const [signIn, { isLoading }] = useSignInMutation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  useTitle("Recipen - Sign In");
+  useTitle("RecipiHub-Pro - Sign In");
 
   const handleChange = (e) => {
     setFormDetails({ ...formDetails, [e.target.id]: e.target.value });
@@ -56,7 +56,7 @@ const SignIn = () => {
             Welcome back
           </h2>
           <p className="text-center md:text-left text-sm">
-            New to Recipen?{" "}
+            New to RecipiHub-Pro?{" "}
             <Link
               to={"/auth/signup"}
               className="text-primary font-semibold"

@@ -26,7 +26,7 @@ import useAuth from "../../hooks/useAuth";
 import useTitle from "../../hooks/useTitle";
 
 const SingleBlog = () => {
-  useTitle("Recipen - Blog");
+  useTitle("RecipiHub-Pro - Blog");
 
   const user = useAuth();
   const { id } = useParams();

@@ -16,7 +16,7 @@ const SignUp = () => {
   });
   const [signUp, { isLoading }] = useSignUpMutation();
   const navigate = useNavigate();
-  useTitle("Recipen - Sign Up");
+  useTitle("RecipiHub-Pro - Sign Up");
 
   const handleChange = (e) => {
     setFormDetails({ ...formDetails, [e.target.id]: e.target.value });

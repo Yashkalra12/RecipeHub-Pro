@@ -12,11 +12,11 @@ const Logo = ({ customCss, hideName = false }) => {
         <div className="w-12">
           <img
             src={logoNoBg}
-            alt="recipen logo"
+            alt="RecipiHub-Pro logo"
             className="w-full h-full"
           />
         </div>
-        {!hideName && <h1 className="font-bold text-xl">Recipen</h1>}
+        {!hideName && <h1 className="font-bold text-xl">RecipiHub-Pro</h1>}
       </div>
     </Link>
   );

@@ -75,7 +75,7 @@ const Footer = () => {
       {/* Footer bottom */}
       <div className="box flex justify-center sm:justify-between flex-col sm:flex-row w-full gap-4">
         <p className="text-sm text-center">
-          &copy; {new Date().getFullYear()} Recipen. All rights reserved
+          &copy; {new Date().getFullYear()} RecipiHub-Pro. All rights reserved
         </p>
         {/* Footer social links */}
         <ul className="flex justify-center gap-6 text-xl">
@@ -84,7 +84,7 @@ const Footer = () => {
             whileHover={{ y: -4 }}
           >
             <a
-              href="https://github.com/Avinash905"
+              href="https://github.com/Yashkalra12"
               aria-label="Follow me on github"
             >
               <AiFillGithub />
@@ -95,7 +95,7 @@ const Footer = () => {
             whileHover={{ y: -4 }}
           >
             <a
-              href="https://twitter.com/avinashdunna"
+              href="https://twitter.com/?lang=en"
               aria-label="Follow me on twitter"
             >
               <AiFillTwitterCircle />
@@ -106,7 +106,7 @@ const Footer = () => {
             whileHover={{ y: -4 }}
           >
             <a
-              href="https://www.linkedin.com/in/dunna-avinash"
+              href="https://www.linkedin.com/in/yashkalra12/"
               aria-label="Follow me on linkedin"
             >
               <AiFillLinkedin />

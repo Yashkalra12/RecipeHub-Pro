@@ -5,7 +5,7 @@ import useTitle from "../hooks/useTitle";
 
 const DashboardLayout = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  useTitle("Recipen - Dashboard");
+  useTitle("RecipiHub-Pro - Dashboard");
 
   return (
     <section className="flex">

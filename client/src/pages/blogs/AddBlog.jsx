@@ -9,7 +9,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import useTitle from "../../hooks/useTitle";
 
 const AddBlog = () => {
-  useTitle("Recipen - Add Blog");
+  useTitle("RecipiHub-Pro - Add Blog");
 
   const [formDetails, setFormDetails] = useState({
     title: "",

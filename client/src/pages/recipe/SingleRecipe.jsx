@@ -31,7 +31,7 @@ import useAuth from "../../hooks/useAuth";
 import useTitle from "../../hooks/useTitle";
 
 const SingleRecipe = () => {
-  useTitle("Recipen - Recipe");
+  useTitle("RecipiHub-Pro - Recipe");
 
   const user = useAuth();
   const [rating, setRating] = useState(0);
