@@ -8,7 +8,7 @@ import useTitle from "../../hooks/useTitle";
 const Recipe = () => {
   const { data, isLoading } = useGetRecipesQuery();
   const dispatch = useDispatch();
-  useTitle("RecipiHub-Pro - All Recipes");
+  useTitle("RecipeHub-Pro - All Recipes");
 
   useEffect(() => {
     if (!isLoading) {

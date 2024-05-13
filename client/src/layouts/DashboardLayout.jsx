@@ -5,14 +5,11 @@ import useTitle from "../hooks/useTitle";
 
 const DashboardLayout = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  useTitle("RecipiHub-Pro - Dashboard");
+  useTitle("RecipeHub-Pro - Dashboard");
 
   return (
     <section className="flex">
-      <Sidebar
-        setIsCollapsed={setIsCollapsed}
-        isCollapsed={isCollapsed}
-      />
+      <Sidebar setIsCollapsed={setIsCollapsed} isCollapsed={isCollapsed} />
       <div className="basis-5/6 mx-auto">
         <Outlet />
       </div>

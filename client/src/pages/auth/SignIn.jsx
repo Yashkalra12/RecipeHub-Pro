@@ -17,7 +17,7 @@ const SignIn = () => {
   const [signIn, { isLoading }] = useSignInMutation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  useTitle("RecipiHub-Pro - Sign In");
+  useTitle("RecipeHub-Pro - Sign In");
 
   const handleChange = (e) => {
     setFormDetails({ ...formDetails, [e.target.id]: e.target.value });
@@ -56,20 +56,14 @@ const SignIn = () => {
             Welcome back
           </h2>
           <p className="text-center md:text-left text-sm">
-            New to RecipiHub-Pro?{" "}
-            <Link
-              to={"/auth/signup"}
-              className="text-primary font-semibold"
-            >
+            New to RecipeHub-Pro?{" "}
+            <Link to={"/auth/signup"} className="text-primary font-semibold">
               Create an account
             </Link>
           </p>
         </div>
         {/* Sign in form */}
-        <form
-          className="flex flex-col gap-4"
-          onSubmit={handleSubmit}
-        >
+        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <Input
             type={"email"}
             id={"email"}

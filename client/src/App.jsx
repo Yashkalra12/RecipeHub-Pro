@@ -34,7 +34,7 @@ import PersistLogin from "./features/auth/PersistLogin";
 import useTitle from "./hooks/useTitle";
 
 function App() {
-  useTitle("RecipiHub-Pro - Home");
+  useTitle("RecipeHub-Pro - Home");
 
   return (
     <Router>
@@ -48,109 +48,49 @@ function App() {
       <Suspense fallback={<PageLoading />}>
         <Routes>
           <Route path="/auth">
-            <Route
-              path="signin"
-              element={<SignIn />}
-            />
-            <Route
-              path="signup"
-              element={<SignUp />}
-            />
+            <Route path="signin" element={<SignIn />} />
+            <Route path="signup" element={<SignUp />} />
           </Route>
 
           <Route element={<PersistLogin />}>
             {/* Dashboard */}
             <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
-              <Route
-                path="/dashboard"
-                element={<DashboardLayout />}
-              >
-                <Route
-                  path="users"
-                  element={<Users />}
-                />
-                <Route
-                  path="recipes"
-                  element={<DashboardRecipes />}
-                />
-                <Route
-                  path="blogs"
-                  element={<DashboardBlogs />}
-                />
+              <Route path="/dashboard" element={<DashboardLayout />}>
+                <Route path="users" element={<Users />} />
+                <Route path="recipes" element={<DashboardRecipes />} />
+                <Route path="blogs" element={<DashboardBlogs />} />
               </Route>
             </Route>
 
-            <Route
-              path="/"
-              element={<RootLayout />}
-            >
-              <Route
-                index
-                element={<Home />}
-              />
+            <Route path="/" element={<RootLayout />}>
+              <Route index element={<Home />} />
               <Route path="recipe">
-                <Route
-                  index
-                  element={<Recipe />}
-                />
-                <Route
-                  path=":id"
-                  element={<SingleRecipe />}
-                />
-                <Route
-                  path="saved"
-                  element={<SavedRecipes />}
-                />
+                <Route index element={<Recipe />} />
+                <Route path=":id" element={<SingleRecipe />} />
+                <Route path="saved" element={<SavedRecipes />} />
 
                 <Route
                   element={
                     <RequireAuth allowedRoles={[ROLES.ProUser, ROLES.Admin]} />
                   }
                 >
-                  <Route
-                    path="add"
-                    element={<AddRecipe />}
-                  />
-                  <Route
-                    path="my-recipes"
-                    element={<MyRecipes />}
-                  />
-                  <Route
-                    path="edit/:id"
-                    element={<EditRecipe />}
-                  />
+                  <Route path="add" element={<AddRecipe />} />
+                  <Route path="my-recipes" element={<MyRecipes />} />
+                  <Route path="edit/:id" element={<EditRecipe />} />
                 </Route>
               </Route>
-              <Route
-                path="contact"
-                element={<Contact />}
-              />
+              <Route path="contact" element={<Contact />} />
               <Route path="blog">
-                <Route
-                  index
-                  element={<Blogs />}
-                />
-                <Route
-                  path=":id"
-                  element={<SingleBlog />}
-                />
+                <Route index element={<Blogs />} />
+                <Route path=":id" element={<SingleBlog />} />
                 <Route
                   element={
                     <RequireAuth allowedRoles={[ROLES.ProUser, ROLES.Admin]} />
                   }
                 >
-                  <Route
-                    path="add"
-                    element={<AddBlog />}
-                  />
-                  <Route
-                    path="my-blogs"
-                    element={<MyBlogs />}
-                  />
-                  <Route
-                    path="edit/:id"
-                    element={<EditBlog />}
-                  />
+                  <Route path="add" element={<AddBlog />} />
+                  <Route path="my-blogs" element={<MyBlogs />} />
+                  <Route path="edit/:id" element={<EditBlog />} />
                 </Route>
               </Route>
               <Route
@@ -160,23 +100,11 @@ function App() {
                   />
                 }
               >
-                <Route
-                  path="profile"
-                  element={<Profile />}
-                />
-                <Route
-                  path="payment-success"
-                  element={<CheckoutSuccess />}
-                />
-                <Route
-                  path="payment-failed"
-                  element={<CheckoutFailure />}
-                />
+                <Route path="profile" element={<Profile />} />
+                <Route path="payment-success" element={<CheckoutSuccess />} />
+                <Route path="payment-failed" element={<CheckoutFailure />} />
               </Route>
-              <Route
-                path="/*"
-                element={<Error />}
-              />
+              <Route path="/*" element={<Error />} />
             </Route>
           </Route>
         </Routes>

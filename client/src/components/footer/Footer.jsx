@@ -19,7 +19,7 @@ const Footer = () => {
           <p>
             Your culinary haven for sharing and savoring. Explore recipes,
             restaurants, and engaging discussions. Join us now and indulge in
-            flavor-filled experiences!"
+            flavor-filled experiences!
           </p>
         </div>
         {/* Footer top right */}
@@ -75,7 +75,7 @@ const Footer = () => {
       {/* Footer bottom */}
       <div className="box flex justify-center sm:justify-between flex-col sm:flex-row w-full gap-4">
         <p className="text-sm text-center">
-          &copy; {new Date().getFullYear()} RecipiHub-Pro. All rights reserved
+          &copy; {new Date().getFullYear()} RecipeHub-Pro. All rights reserved
         </p>
         {/* Footer social links */}
         <ul className="flex justify-center gap-6 text-xl">

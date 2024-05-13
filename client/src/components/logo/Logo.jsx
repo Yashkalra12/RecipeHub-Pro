@@ -4,19 +4,16 @@ import { Link } from "react-router-dom";
 
 const Logo = ({ customCss, hideName = false }) => {
   return (
-    <Link
-      to={"/"}
-      className={`max-w-max ${customCss}`}
-    >
+    <Link to={"/"} className={`max-w-max ${customCss}`}>
       <div className="flex gap-1.5 items-center">
         <div className="w-12">
           <img
             src={logoNoBg}
-            alt="RecipiHub-Pro logo"
+            alt="RecipeHub-Pro logo"
             className="w-full h-full"
           />
         </div>
-        {!hideName && <h1 className="font-bold text-xl">RecipiHub-Pro</h1>}
+        {!hideName && <h1 className="font-bold text-xl">RecipeHub-Pro</h1>}
       </div>
     </Link>
   );

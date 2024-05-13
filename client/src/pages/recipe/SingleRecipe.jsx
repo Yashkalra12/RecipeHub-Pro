@@ -31,7 +31,7 @@ import useAuth from "../../hooks/useAuth";
 import useTitle from "../../hooks/useTitle";
 
 const SingleRecipe = () => {
-  useTitle("RecipiHub-Pro - Recipe");
+  useTitle("RecipeHub-Pro - Recipe");
 
   const user = useAuth();
   const [rating, setRating] = useState(0);
@@ -234,11 +234,7 @@ const SingleRecipe = () => {
                 </div>
               </div>
               {/* Recipe rating */}
-              <Rating
-                value={averageRating}
-                size={"medium"}
-                readOnly
-              />
+              <Rating value={averageRating} size={"medium"} readOnly />
               <p className="my-4">{data?.description}</p>
               {/* Recipe time & cals */}
               <div className="flex flex-col sm:flex-row gap-4 justify-between w-2/3 mx-auto">
@@ -300,10 +296,7 @@ const SingleRecipe = () => {
           {/* Recipe comment form */}
           <div className="my-10 w-full sm:w-2/3 md:w-1/2 mx-auto flex flex-col gap-6">
             <h3 className="font-bold text-2xl">Leave a Reply</h3>
-            <form
-              className="flex flex-col gap-4"
-              onSubmit={handleSubmit}
-            >
+            <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
               <Input
                 type={"text"}
                 id={"name"}
@@ -323,10 +316,7 @@ const SingleRecipe = () => {
                 placeholder={"example@abc.com"}
               />
               <div className="flex flex-col relative ">
-                <label
-                  htmlFor="message"
-                  className="text-sm font-semibold mb-3"
-                >
+                <label htmlFor="message" className="text-sm font-semibold mb-3">
                   Comment
                 </label>
                 <textarea

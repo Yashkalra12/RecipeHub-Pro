@@ -14,7 +14,7 @@ import useTitle from "../../hooks/useTitle";
 
 const Contact = () => {
   const user = useAuth();
-  useTitle("RecipiHub-Pro - Contact Us");
+  useTitle("RecipeHub-Pro - Contact Us");
 
   const [formDetails, setFormDetails] = useState({
     firstName: "",
@@ -47,29 +47,23 @@ const Contact = () => {
           <h4 className="font-bold">Chat with us</h4>
           <p>Our team is here to help</p>
           <a
-            href="mailto:RecipiHub-Pro@abc.com"
+            href="mailto:RecipeHub-Pro@abc.com"
             className="font-semibold text-sm"
           >
-            RecipiHub-Pro@abc.com
+            RecipeHub-Pro@abc.com
           </a>
         </div>
         <div className="mb-5 flex flex-col gap-1">
           <h4 className="font-bold">Call us</h4>
           <p>Mon-Fri from 9am to 6pm</p>
-          <a
-            href="tel:+919876543210"
-            className="font-semibold text-sm"
-          >
+          <a href="tel:+919876543210" className="font-semibold text-sm">
             +91 9876543210
           </a>
         </div>
         <div className="mb-5 flex flex-col gap-3">
           <h4 className="font-bold">Social media</h4>
           <ul className="flex justify-center md:justify-start gap-4 text-xl">
-            <motion.li
-              className="hover:text-gray-500"
-              whileHover={{ y: -4 }}
-            >
+            <motion.li className="hover:text-gray-500" whileHover={{ y: -4 }}>
               <a href="https://github.com/Yashkalra12">
                 <AiFillGithub />
               </a>
@@ -107,7 +101,6 @@ const Contact = () => {
           className="flex flex-col gap-4"
           method="POST"
           action="https://formspree.io/f/mpzvblqy"
-          
         >
           <div className="flex gap-4 flex-col sm:flex-row md:flex-col lg:flex-row">
             <Input
@@ -149,10 +142,7 @@ const Contact = () => {
             pattern={/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/}
           />
           <div className="flex flex-col relative ">
-            <label
-              htmlFor="message"
-              className="text-sm font-semibold mb-3"
-            >
+            <label htmlFor="message" className="text-sm font-semibold mb-3">
               Message
             </label>
             <textarea

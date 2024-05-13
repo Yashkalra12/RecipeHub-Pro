@@ -9,7 +9,7 @@ import { useAddRecipeMutation } from "../../features/recipe/recipeApiSlice";
 import useTitle from "../../hooks/useTitle";
 
 const AddRecipe = () => {
-  useTitle("RecipiHub-Pro - Add Recipe");
+  useTitle("RecipeHub-Pro - Add Recipe");
 
   const [formDetails, setFormDetails] = useState({
     title: "",
@@ -311,10 +311,7 @@ const AddRecipe = () => {
                       <p className="text-sm text-gray-700">{ele}</p>
                     </div>
                     <div>
-                      <RxCross2
-                        className="cursor-pointer"
-                        size={20}
-                      />
+                      <RxCross2 className="cursor-pointer" size={20} />
                     </div>
                   </li>
                 ))}

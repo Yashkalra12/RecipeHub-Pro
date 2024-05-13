@@ -7,7 +7,7 @@ import useTitle from "../../hooks/useTitle";
 const index = () => {
   const { data, isLoading } = useGetBlogsQuery();
   const user = useAuth();
-  useTitle("RecipiHub-Pro - My Blogs");
+  useTitle("RecipeHub-Pro - My Blogs");
 
   const updatedData = data?.filter((obj) => obj.author._id === user?.userId);
 
@@ -17,9 +17,9 @@ const index = () => {
         <ComponentLoading />
       ) : (
         <AllCards
-          mainTitle={"Your RecipiHub-Pro Chronicles"}
+          mainTitle={"Your RecipeHub-Pro Chronicles"}
           tagline={
-            "Dive into a world of your engaging articles and captivating stories on RecipiHub-Pro Chronicles."
+            "Dive into a world of your engaging articles and captivating stories on RecipeHub-Pro Chronicles."
           }
           type={"blog"}
           data={updatedData}

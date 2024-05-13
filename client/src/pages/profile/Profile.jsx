@@ -15,7 +15,7 @@ import useTitle from "../../hooks/useTitle";
 
 const Profile = () => {
   const user = useAuth();
-  useTitle("RecipiHub-Pro - Profile");
+  useTitle("RecipeHub-Pro - Profile");
 
   const [formDetails, setFormDetails] = useState({
     name: user?.name || "",
@@ -79,10 +79,7 @@ const Profile = () => {
           {/* Upload image */}
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:mb-4">
             {progress > 0 && progress < 100 ? (
-              <CircularProgress
-                color="warning"
-                size={30}
-              />
+              <CircularProgress color="warning" size={30} />
             ) : (
               <MuiAvatar
                 alt={user?.name}
@@ -143,10 +140,7 @@ const Profile = () => {
         </form>
         {/* Profile banner */}
         <div className="hidden md:block md:basis-1/3">
-          <img
-            src={profileBg}
-            alt="profile page banner"
-          />
+          <img src={profileBg} alt="profile page banner" />
         </div>
       </div>
     </section>
