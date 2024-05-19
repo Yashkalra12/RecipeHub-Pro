@@ -1,2 +1,4 @@
-/Users/yashkalra/Desktop/ResumeProjects/RecipeHub-Pro/server/env
-/Users/yashkalra/Desktop/ResumeProjects/RecipeHub-Pro/client/.env
+/client/node_modules
+/server/node_modules
+/server/.env
+/client/.env
