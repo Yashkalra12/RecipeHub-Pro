@@ -41,7 +41,7 @@ const Subscribe = () => {
             "Manage your content",
           ]}
           btnText={"Get started"}
-          // link={"https://buy.stripe.com/test_14kaHr3473oY492288"}
+          link={"https://buy.stripe.com/test_14kaHr3473oY492288"}
         />
       </div>
     </section>
