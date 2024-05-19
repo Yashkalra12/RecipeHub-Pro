@@ -4,10 +4,6 @@
 <h3>📝 Description :</h3>
 Welcome to Recipen – a recipe website for food enthusiasts to explore, create, and share their culinary experiences. Indulge in a community-driven platform where food enthusiasts share their cherished recipes and captivating food blogs. Subscribe to the pro version to share your own recipes and to unlock a realm of taste, culture, and creativity.
 
-<div align="center">
-<img src="./client/src/Mockups/HomePage.jpeg" alt="mockup" />
-</div>
-
 <br>
 
 ---
